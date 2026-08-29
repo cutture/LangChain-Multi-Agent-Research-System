@@ -92,18 +92,23 @@ html, body, [class*="css"] {
 
 /* ── Streamlit input overrides ── */
 .stTextInput > div > div > input {
-    background: rgba(255,255,255,0.06) !important;
+    background: #ffffff !important;
     border: 1px solid rgba(56,189,248,0.25) !important;
     border-radius: 12px !important;
-    color: #f8fbff !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
     font-family: 'DM Sans', sans-serif !important;
     font-size: 1rem !important;
     padding: 0.8rem 1rem !important;
     transition: all 0.2s ease !important;
 }
+.stTextInput > div > div > input::placeholder {
+    color: #6b7280 !important;
+}
 .stTextInput > div > div > input:focus {
     border-color: #38bdf8 !important;
     box-shadow: 0 0 0 4px rgba(56,189,248,0.14) !important;
+    background: #ffffff !important;
 }
 .stTextInput > label {
     font-family: 'DM Mono', monospace !important;
